@@ -35,7 +35,7 @@ def start_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind(('0.0.0.0', 12345))
     server_socket.listen(2)
-    print(f'Server is now running on {HOST}:{PORT}')
+    print(f'Server is now running on 0.0.0.0:12345')
 
     while True:
         client_socket, client_address = server_socket.accept()
